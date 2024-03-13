@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { GitHubBanner, Refine } from "@refinedev/core";
+import { Refine } from "@refinedev/core";
 import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/nextjs-router/pages";
 
@@ -13,7 +13,7 @@ import "src/styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
-      <GitHubBanner />
+      
       <Refine
         routerProvider={routerProvider}
         dataProvider={dataProvider(API_URL)}
